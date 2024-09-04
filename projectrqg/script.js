@@ -15,6 +15,7 @@ function getRandomQuote() {
         .catch(error => console.error("Error fetching quotes:", error));
 }
 
+//populate the text
 function displayQuote(quotes) {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const quoteText = quotes[randomIndex].text;
